@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class TalkController {
-	@RequestMapping("/talk/list")
+	@RequestMapping("/jsw/HI")
 	public String showList(@RequestParam Map<String, Object> param) {
 		
-		return "talk/list";
+		return "/jsw/HI";
 	}
 }
