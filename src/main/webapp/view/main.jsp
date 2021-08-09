@@ -12,7 +12,6 @@
 		<div>작성자</div>
 		<div>제목</div>
 		<div>조회수</div>
-
 	</div>
 </body>
 </html>
