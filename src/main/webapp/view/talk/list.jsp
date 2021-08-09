@@ -12,6 +12,7 @@
 		<div>작성자</div>
 		<div>제목</div>
 		<div>조회수</div>
+		나는 무너
 	</div>
 </body>
 </html>
