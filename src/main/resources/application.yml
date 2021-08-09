@@ -19,12 +19,12 @@ spring :
   ### vide page
   mvc : 
     view :
-      prefix : /views/
+      prefix : /view/
       suffix : .jsp
       
       
 ### mybatis 설정
 mybatis:
   mapper-locations: mappers/**/*.xml
-  type-aliases-package: aaa.db
+  type-aliases-package: com.talk.db
     
