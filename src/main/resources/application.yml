@@ -34,7 +34,7 @@ spring :
   ### view page
   mvc :
     view :
-      prefix : /views/
+      prefix : /view/
       suffix : .jsp
       
       
