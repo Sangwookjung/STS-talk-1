@@ -4,14 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>TALK-BOARD</title>
+<title>FILE</title>
 </head>
 <body>
-	<div>
-		<div>번호</div>
-		<div>작성자</div>
-		<div>제목</div>
-		<div>조회수</div>
-	</div>
+	FILE
 </body>
 </html>
