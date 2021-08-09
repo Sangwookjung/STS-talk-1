@@ -7,8 +7,12 @@
 <title>하위</title>
 </head>
 <body>
+<<<<<<< HEAD
  	범태친구 집착하네요
  	범태친구 형규
  	형규 범태 짱싫움
+=======
+ 	123 asdfasdf affef a dafasdsfasdfdfdffdfd
+>>>>>>> refs/heads/master
 </body>
 </html>
