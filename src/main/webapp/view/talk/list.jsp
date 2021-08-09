@@ -11,7 +11,7 @@
 		<div>번호</div>
 		<div>작성자</div>
 		<div>제목</div>
-		<div>조회수</div>
+		<div>조회수</div>dfdf
 	</div>
 </body>
 </html>
