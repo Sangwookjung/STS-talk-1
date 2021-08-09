@@ -29,7 +29,7 @@ spring :
   devtools :
     livereload :
       enabled : true
-      
+       
       
   ### view page
   mvc :
