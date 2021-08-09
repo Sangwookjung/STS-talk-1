@@ -6,21 +6,33 @@
                 
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> refs/heads/rjs
                 
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
                 
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
                 
+<<<<<<< HEAD
 >>>>>>> refs/heads/master
+=======
+>>>>>>> refs/heads/rjs
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/target/generated-sources/annotations"/>
                 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> refs/heads/rjs
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/target/generated-test-sources/test-annotations"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
                 
+<<<<<<< HEAD
 >>>>>>> refs/heads/master
+=======
+>>>>>>> refs/heads/rjs
         <property name="context-root" value="talkproj"/>
                 
         <property name="java-output-path" value="/talkproj/target/classes"/>
