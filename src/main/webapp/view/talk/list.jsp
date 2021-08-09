@@ -13,6 +13,7 @@
 		<div>제목</div>
 		<div>조회수</div>
 		<div>정상욱</div>
+		<div>왜안나와?</div>
 	</div>
 </body>
 </html>
