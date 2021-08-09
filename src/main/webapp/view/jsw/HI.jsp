@@ -7,12 +7,6 @@
 <title>하위</title>
 </head>
 <body>
-<<<<<<< HEAD
- 	범태친구 집착하네요
- 	범태친구 형규
- 	형규 범태 짱싫움
-=======
- 	123 asdfasdf affef a dafasdsfasdfdfdffdfd
->>>>>>> refs/heads/master
+ 야이야아아 내 나이가 어때서 
 </body>
 </html>
