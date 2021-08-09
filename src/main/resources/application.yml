@@ -3,6 +3,7 @@ server:
 
   
 spring :
+<<<<<<< HEAD
   #### DB
   datasource :
     driver-class-name : org.mariadb.jdbc.Driver
@@ -74,3 +75,30 @@ AdminMail :
 
 
 
+=======
+  ####  DB
+  datasource :
+    driver-class-name : org.mariadb.jdbc.Driver
+    url : jdbc:mariadb://localhost:3306/korea
+    username : kj
+    password : 123456
+  
+  ### 내용 갱신시 서버 reloading
+  devtools :
+    livereload :
+      endbled : true
+      
+  
+  ### vide page
+  mvc : 
+    view :
+      prefix : /view/
+      suffix : .jsp
+      
+      
+### mybatis 설정
+mybatis:
+  mapper-locations: mappers/**/*.xml
+  type-aliases-package: com.talk.db
+    
+>>>>>>> 854d3d0f72267f19cbcabddd39babfcbb6f6cf26
