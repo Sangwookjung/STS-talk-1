@@ -42,7 +42,7 @@ spring :
 ###mybatis 설정
 mybatis:
   mapper-locations: mappers/**/*.xml
-  type-aliases-package: bms.db
+  type-aliases-package: bms.db 
 
 ##jspajakwfbcgijxg  
 ##spring.mail.host=smtp.gmail.com spring.mail.port=587 spring.mail.username= hotelbomulsum@gmail.com // gmail 계정
