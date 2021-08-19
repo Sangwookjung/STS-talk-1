@@ -16,6 +16,17 @@
 	</select>
 <!-- 페이징 --> 
  	
+ 	 <select id="rjsDetail" resultType="RjsListDTO" parameterType="RjsListDTO">
+		select * from rjsboard where rjsnumber = #{rjsnumber}
+	</select> 
+<!-- 디테일 number로 where --> 
+
+
+	<update id="addCount" parameterType="RjsListDTO">
+	update rjsboard set
+	rjscnt = rjscnt + 1
+	where rjsnumber = #{rjsnumber} 
+	</update>
 	
 	 
 </mapper>

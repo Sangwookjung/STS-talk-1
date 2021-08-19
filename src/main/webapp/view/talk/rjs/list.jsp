@@ -64,7 +64,7 @@
 <c:forEach items="${data.rjsmap}" var="rjsDTO" varStatus="no">
 		<div>${rjsDTO.rjsnumber }</div>
 		<div>${rjsDTO.rjsname }</div>
-		<div>${rjsDTO.rjstitle }</div>
+		<div class="titleCon" onclick="location.href='detail?rjsnumber=${rjsDTO.rjsnumber}'" >${rjsDTO.rjstitle }</div>
 		<div>${rjsDTO.rjsreg_date }</div>
 		<div>${rjsDTO.rjscnt }</div>
 </c:forEach>
@@ -98,10 +98,14 @@
 					</c:if>
 
 			</div>
+			
+			<div>
+				<div colspan="5" align="right" onclick="location.href='insertForm'">글쓰기</div>
+			</div>
 		</div>
 </div>
 
-	글쓰기 해야하고ㅜ 수정하고 ㅎ삭제하고ㅜ 싀1버ㅏㅣㄹㄹㅇ난ㅍ루 읖ㄹ,ㄴ.ㅇ,ㅏㅣㅈㅂㅈㅂㅈㅂㅈㅂㅈㅂㅈㅂㅇ,ㅡ
+	
 	
 	
 </body>

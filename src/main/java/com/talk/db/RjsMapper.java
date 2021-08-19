@@ -13,5 +13,9 @@ public interface RjsMapper {
 	
 	int rjsCnt(RjsListDTO rjsDTO); //페이징
 	
+	RjsListDTO rjsDetail(RjsListDTO rjsDTO); //디테일 상세내용 확인
+	
+	void addCount(RjsListDTO rjsDTO); // 조회수 카운팅
+
 	
 }
