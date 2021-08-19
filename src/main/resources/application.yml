@@ -12,7 +12,7 @@ server:
 spring :
   datasource :
     driver-class-name : org.mariadb.jdbc.Driver
-    url : jdbc:mariadb://localhost:3306/korea
+    url : jdbc:mariadb://localhost:3306/talk
     username : kj
     password : 123456
   

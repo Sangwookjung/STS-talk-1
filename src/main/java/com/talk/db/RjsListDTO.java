@@ -1,0 +1,15 @@
+package com.talk.db;
+
+import java.sql.Date;
+
+import lombok.Data;
+
+@Data
+public class RjsListDTO {
+	
+	Integer rjsnumber, rjscnt=0;
+	String rjsname;
+	String rjstitle;
+	String rjscontent;
+	Date rjsreg_date;
+}

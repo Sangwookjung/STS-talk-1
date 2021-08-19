@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.talk.db.RjsMapper">
+
+
+	<select id="rjsList" resultType="RjsListDTO" parameterType="HashMap">
+		select * from rjsboard
+		order by rjsnumber desc
+		limit #{pDTO.start}, #{pDTO.limit}
+	</select> 
+<!-- rjsId 기준으로 page를 불러옴 -->
+
+	<select id="rjsCnt" resultType="java.lang.Integer" parameterType="Integer">
+		select count(*) from rjsboard 
+	</select>
+<!-- 페이징 --> 
+ 	
+	
+	 
+</mapper>
