@@ -11,10 +11,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
+@RequestMapping("/talk/{cate}/{service}")
 public class TalkController {
 	Logger logger = LoggerFactory.getLogger(getClass());
 	
-	@RequestMapping("/talk/{cate}/{service}")
+	@RequestMapping()
 	String view(@PathVariable String cate,@PathVariable String service) {
 		
 		System.out.println("cate : "+cate );
