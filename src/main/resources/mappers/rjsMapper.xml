@@ -27,6 +27,22 @@
 	rjscnt = rjscnt + 1
 	where rjsnumber = #{rjsnumber} 
 	</update>
-	
-	 
+<!-- 조회수 증가 --> 	
+
+	<insert id="rjsInsert" parameterType="RjsListDTO" >
+	      insert into rjsboard 
+	      (rjsname, rjstitle, rjspw ,rjscontent,rjscnt,rjsreg_date) 
+	      values 
+	      (#{rjsname},#{rjstitle},#{rjspw},#{rjscontent},0,sysdate() )
+   </insert>
+   <!-- 글 내용 저장 -->
+   
+   <update id="rjsModify" parameterType="RjsListDTO">
+        update rjsboard set 
+        rjstitle = #{rjstitle} , 
+        rjsname = #{rjsname} , 
+        rjscontent = #{rjscontent}
+        where rjsnumber = #{rjsnumber} and rjspw = #{rjspw}
+    </update>
+	 <!-- 게시물 수정 --> 
 </mapper>

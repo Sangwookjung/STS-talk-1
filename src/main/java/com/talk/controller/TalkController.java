@@ -36,6 +36,9 @@ public class TalkController {
 	@RequestMapping()
 	String view(@PathVariable String cate,@PathVariable String service) {
 		
+		if(service.endsWith("RegRjs")) {
+			return "talk/"+cate+"/alert";
+		}
 		System.out.println("cate : "+cate );
 		System.out.println("service : "+service );
 		return "talk/"+cate+"/"+service;
@@ -68,7 +71,6 @@ public class TalkController {
 		System.out.println("modelAttribute + "+pDTO);
 		
 		return pDTO;
-		
 		
 	}
 	

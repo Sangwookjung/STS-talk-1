@@ -10,6 +10,11 @@ create table rjsboard(
   ALTER TABLE rjsboard ADD cnt int /*컬럼 추가*/
   
   alter table rjsboard 
+
+  ALTER TABLE rjsborad ADD rjspw varchar(100) /*컬럼 추가*/
+  
+  alter table rjsborad 
+
   change column `number` `rjsnumber`;
  
 ALTER TABLE rjsboard CHANGE `number` `rjsnumber` int auto_increment primary key COMMENT '1';

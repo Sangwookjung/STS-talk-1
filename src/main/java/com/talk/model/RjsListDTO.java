@@ -8,6 +8,7 @@ import lombok.Data;
 public class RjsListDTO {
 	
 	Integer rjsnumber, rjscnt=0;
+	String	rjspw;
 	String rjsname;
 	String rjstitle;
 	String rjscontent;

@@ -1,0 +1,36 @@
+{
+	"folders": {},
+	"connections": {
+<<<<<<< HEAD
+		"mariaDB-17b57964c08-6e5940a8f49b0549": {
+=======
+		"mariaDB-17b60446f79-695d10329a3b614d": {
+>>>>>>> refs/remotes/origin/jsw
+			"provider": "mysql",
+			"driver": "mariaDB",
+			"name": "localhost",
+			"save-password": true,
+			"read-only": false,
+			"configuration": {
+				"host": "localhost",
+				"port": "3306",
+				"url": "jdbc:mysql://localhost:3306/",
+				"home": "mysql_client",
+				"type": "dev",
+				"auth-model": "native",
+				"handlers": {}
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"auto-close-transactions": false
+		}
+	}
+}

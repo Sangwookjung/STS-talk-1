@@ -4,13 +4,14 @@ import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
 
+import com.talk.model.AlertDTO;
 import com.talk.model.PageDTO;
 import com.talk.model.RjsBoardAction;
 import com.talk.model.RjsListDTO;
 import com.talk.model.RjsMapper;
 
 @Service
-public class RjsBoarddetail implements RjsBoardAction{
+public class RjsBoardinsertRegRjs implements RjsBoardAction{
 	
 	@Resource
 	RjsMapper mm;
@@ -18,12 +19,16 @@ public class RjsBoarddetail implements RjsBoardAction{
 	
 	@Override
 	public Object execute(PageDTO pDTO, RjsListDTO rjsDTO) {
-		RjsListDTO rDTO = mm.rjsDetail(rjsDTO); //디테일 
-		//System.out.println("### > "+rDTO);
-		mm.addCount(rDTO); //조회수 증가 추가
+
 		
-		//System.out.println(mm.rjsDetail(rDTO));
-		return mm.rjsDetail(rDTO); //리턴
+		mm.rjsInsert(rjsDTO);
+		
+		AlertDTO dto = new AlertDTO();
+		
+		dto.setMsg("작성되었습니다.");
+		dto.setUrl("list");
+		
+		return dto; //리턴
 		
 	}
 }
