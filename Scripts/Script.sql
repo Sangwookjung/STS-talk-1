@@ -7,12 +7,12 @@ create table rjsboard(
    rjscnt int not null
    );
    
-  ALTER TABLE rjsborad ADD cnt int /*컬럼 추가*/
+  ALTER TABLE rjsboard ADD cnt int /*컬럼 추가*/
   
-  alter table rjsborad 
+  alter table rjsboard 
   change column `number` `rjsnumber`;
  
-ALTER TABLE rjsborad CHANGE `number` `rjsnumber` int auto_increment primary key COMMENT '1';
+ALTER TABLE rjsboard CHANGE `number` `rjsnumber` int auto_increment primary key COMMENT '1';
 
 
 create table jswlist (

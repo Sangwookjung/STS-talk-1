@@ -1,11 +1,7 @@
 {
 	"folders": {},
 	"connections": {
-<<<<<<< HEAD
-		"mariaDB-17b57964c08-6e5940a8f49b0549": {
-=======
-		"mariaDB-17b60446f79-695d10329a3b614d": {
->>>>>>> refs/remotes/origin/jsw
+		"mariaDB-17b6178a880-75b9acdccc561906": {
 			"provider": "mysql",
 			"driver": "mariaDB",
 			"name": "localhost",

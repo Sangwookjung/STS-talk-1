@@ -14,8 +14,7 @@ public class ListDTO {
 
 	PageDTO pdto;
 
+	List<JswListDTO> jswmap;
 	
-	
-
-
+	JswListDTO jswdto;
 }

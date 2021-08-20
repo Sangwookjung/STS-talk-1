@@ -17,6 +17,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+
+import com.talk.model.JswBoardAction;
+import com.talk.model.JswListDTO;
 import com.talk.model.PageDTO;
 import com.talk.model.RjsBoardAction;
 import com.talk.model.RjsListDTO;
@@ -26,7 +29,6 @@ import com.talk.service.MyProvider;
 @Controller
 @RequestMapping("/talk/{cate}/{service}")
 public class TalkController {
-	Logger logger = LoggerFactory.getLogger(getClass());
 	
 	@Resource
 	MyProvider myProvider;
@@ -48,9 +50,16 @@ public class TalkController {
 		
 		RjsBoardAction res = myProvider.getContext().getBean("rjsBoard"+service, RjsBoardAction.class);
 		
-		System.out.println("service : "+service + "\n pDTO : " + pDTO + "\n rjsDTO" + rjsDTO);
 		return res.execute(pDTO, rjsDTO);
 		
+	}
+	
+	@ModelAttribute("jswdata")
+	Object jswdata(@PathVariable String cate, @PathVariable String service, JswListDTO jdto, PageDTO pDTO) {
+		System.out.println("하잉");
+		JswBoardAction res = myProvider.getContext().getBean("jswBoard"+service,JswBoardAction.class);
+		System.out.println("service : "+service + "\n pDTO : " + pDTO + "\n jswdto" + jdto);
+		return res.execute(jdto, pDTO);
 	}
 	
 	@ModelAttribute("pDTO")

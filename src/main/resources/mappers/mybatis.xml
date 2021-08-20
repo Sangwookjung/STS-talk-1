@@ -2,10 +2,34 @@
 <!DOCTYPE mapper 
 PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.talk.model.DBMapper">
+<mapper namespace="com.talk.model.JswMapper">
 	
-	<select id="getlist" resultType="JSWlistDTO" parameterType="HashMap">
-		select * from jswlist;
+	<select id="getlist" resultType="JswListDTO" parameterType="HashMap">
+		select * from jswlist
+		order by jswno desc
+		limit #{pDTO.start}, #{pDTO.limit}
 	</select>
-
+	
+	<select id="jswCnt" resultType="java.lang.Integer" parameterType="HashMap">
+		select count(*) from jswlist
+	</select>
+	
+	<select id="jswDetail" resultType="JswListDTO" parameterType="HashMap">
+		select * from jswlist where jswno = #{jswno}
+	</select>
+	
+	<insert id="jswInsert" parameterType="JswlistDTO">
+		insert into board (jswtitle, jswname, jswpw, jswcontent, jswcnt, jswdate ) 
+		values (#{jswtitle}, #{jswname}, #{jswpw}, #{jswcontent}, 0, sysdate() )
+		
+		<selectKey keyProperty="jswno" order="AFTER" resultType="Integer">
+			select max(jswno) from board
+		</selectKey>
+	</insert>
+	
+	<update id="viewCnt" parameterType="JswListDTO">
+		update jswlist set
+		jswcnt = jswcnt + 1
+		where jswno = #{jswno}
+	</update>
 </mapper>
