@@ -1,4 +1,4 @@
-package com.talk.db;
+package com.talk.model;
 
 import java.util.HashMap;
 import java.util.List;

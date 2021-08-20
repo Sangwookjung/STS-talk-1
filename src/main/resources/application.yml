@@ -32,6 +32,6 @@ spring :
 ### mybatis 설정
 mybatis:
   mapper-locations: mappers/**/*.xml
-  type-aliases-package: com.talk.db
+  type-aliases-package: com.talk.model
     
 

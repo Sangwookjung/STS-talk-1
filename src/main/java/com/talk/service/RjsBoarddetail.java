@@ -4,10 +4,10 @@ import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
 
-import com.talk.db.PageDTO;
-import com.talk.db.RjsBoardAction;
-import com.talk.db.RjsListDTO;
-import com.talk.db.RjsMapper;
+import com.talk.model.PageDTO;
+import com.talk.model.RjsBoardAction;
+import com.talk.model.RjsListDTO;
+import com.talk.model.RjsMapper;
 
 @Service
 public class RjsBoarddetail implements RjsBoardAction{

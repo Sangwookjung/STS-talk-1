@@ -1,4 +1,4 @@
-package com.talk.db;
+package com.talk.model;
 
 import java.sql.Date;
 

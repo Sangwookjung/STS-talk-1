@@ -16,9 +16,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.talk.db.PageDTO;
-import com.talk.db.RjsBoardAction;
-import com.talk.db.RjsListDTO;
+import com.talk.model.PageDTO;
+import com.talk.model.RjsBoardAction;
+import com.talk.model.RjsListDTO;
 import com.talk.service.MyProvider;
 
 
