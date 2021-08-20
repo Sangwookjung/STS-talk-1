@@ -45,6 +45,9 @@
 	cursor: pointer;
 	
 }
+.titleCon{
+	cursor: pointer;
+}
  </style>
 <meta charset="UTF-8">
 <title>TALK-BOARD</title>
@@ -64,7 +67,7 @@
 <c:forEach items="${data.rjsmap}" var="rjsDTO" varStatus="no">
 		<div>${rjsDTO.rjsnumber }</div>
 		<div>${rjsDTO.rjsname }</div>
-		<div class="titleCon" onclick="location.href='detail?rjsnumber=${rjsDTO.rjsnumber}'" >${rjsDTO.rjstitle }</div>
+		<div class="titleCon" onclick="location.href='detail?rjsnumber=${rjsDTO.rjsnumber}&page=${pDTO.page}'" >${rjsDTO.rjstitle }</div>
 		<div>${rjsDTO.rjsreg_date }</div>
 		<div>${rjsDTO.rjscnt }</div>
 </c:forEach>

@@ -31,13 +31,24 @@
 }
  .titleMainSub2{
 	width: 800px;
-	height: 50px;
+	height: 450px;
 }
  .titleMainSub2 > div{
 	width: 125px;
-	height: 450px;
+	height: 400px;
 	display: inline-block;
 	text-align: center;
+}
+.last{
+	width: 150px;
+	height: 50px;
+	display: inline-block;
+	margin-top: 420px;
+	margin-left: 680px;
+}
+.last > div{
+	display: inline-block;
+	cursor: pointer;
 }
  </style>
 <meta charset="UTF-8">
@@ -67,7 +78,10 @@
 		
 	</div>
 	
-	<div class="conMain"> 
+	<div class="last">
+		<div onclick="location.href='list?page=${pDTO.page}'">목록</div>
+		<div onclick="location.href='modifyForm?rjsnumber=${data.rjsnumber}'">수정</div>
+		<div onclick="location.href='deleteForm?rjsnumber=${data.rjsnumber}'">삭제</div>
 	</div>
 	
 </div>

@@ -9,6 +9,8 @@ create table rjsboard(
    
   ALTER TABLE rjsborad ADD cnt int /*컬럼 추가*/
   
+  ALTER TABLE rjsborad ADD rjspw varchar(100) /*컬럼 추가*/
+  
   alter table rjsborad 
   change column `number` `rjsnumber`;
  
