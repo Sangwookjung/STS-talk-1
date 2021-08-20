@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"resources":{"Scripts/Script.sql":{"sql-editor-data-source-id":"mariaDB-17b57964c08-6e5940a8f49b0549","default-datasource":"mariaDB-17b57964c08-6e5940a8f49b0549","default-catalog":"talk"}}}
+=======
+{"resources":{"Scripts/Script.sql":{"sql-editor-data-source-id":"mariaDB-17b60446f79-695d10329a3b614d","default-datasource":"mariaDB-17b60446f79-695d10329a3b614d","default-catalog":"jswboard"}}}
+>>>>>>> refs/remotes/origin/jsw
