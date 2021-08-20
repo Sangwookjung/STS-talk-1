@@ -9,7 +9,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="insertReg" method="post" enctype="multipart/form-data">
+<form action="insertRegRjs" method="post" enctype="multipart/form-data">
 
    
    	<div class="insertMain">
