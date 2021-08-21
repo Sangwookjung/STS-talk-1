@@ -11,7 +11,9 @@ public interface JswMapper {
 	
 	JswListDTO jswDetail(JswListDTO jdto);
 	
-	void jswinsert(JswListDTO jdto);
+	void jswInsert(JswListDTO jdto);
+	
+	void jswUpdate(JswListDTO jdto);
 	
 	int jswCnt(HashMap<String, Object> map);
 	

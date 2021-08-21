@@ -28,19 +28,28 @@
 	}
 	
 </style>
+
+<script>
+	function pwcheck() {
+		var pw = getparam.id;
+		$().pwcheck.val()
+		if(pw == ${jswdata.jswpw}) {
+			redirect
+		}else 
+			alert
+		}
+</script>
 <body>
-<form action="insertGo" method="post" enctype="multipart/form-data">
+<form action="updateGo" method="post" enctype="multipart/form-data">
+<input type="hidden" method="post" name="jswno" value="${jswdata.jswno }"/>
 <div class="wrapper">
 	<div class="first">
-		<div>작성자</div>
-		<div><input type="text" name="jswname"></div>
-		<div>암호</div><div><input type="password" name="jswpw"/></div>
-		<div>제목</div><div><input type="text" name="jswtitle"/></div>
-		<div>내용</div><div><textarea name="jswcontent" rows="5" cols="30"/></textarea></div>
+		<div>암호 확인</div>
+		<input type="password" id="pwcheck"/>
 	</div>
 
  	<div>
- 		<input type="submit" value="등록하기"/>
+ 		<input type="submit" value="수정하기" onclick="pwcheck()"/>
  		<input type="button" value="뒤로가기" onclick="location.href='list?page=${pDTO.page}'"/>
  	</div>
  </div>

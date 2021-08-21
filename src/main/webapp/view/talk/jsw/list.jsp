@@ -67,8 +67,8 @@
   </script> -->
 </head>
 <body>
-<form action="insert">
-<input type="hidden" name="id" id="jswdetail" />
+<!-- <form action="insert"> -->
+<!-- <input type="hidden" name="id" id="jswdetail" /> -->
 	<div class="table">
 		<div class="head">
 			<div>번호</div>
@@ -111,9 +111,9 @@
 			</div>
 		</div>
 		<div>
-			<input type="submit" value="글쓰기"/> 
+			<input type="button" value="게시물 등록" onclick="location.href='insert?page=${pDTO.page}'"/>
 		</div>
 	</div>
-</form>
+<!-- </form> -->
 </body>
 </html>

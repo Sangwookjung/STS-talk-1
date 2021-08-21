@@ -29,18 +29,19 @@
 	
 </style>
 <body>
-<form action="insertGo" method="post" enctype="multipart/form-data">
+<form action="updateGo" method="post" enctype="multipart/form-data">
+<input type="hidden" method="post" name="jswno" value="${jswdata.jswno }"/>
 <div class="wrapper">
 	<div class="first">
 		<div>작성자</div>
-		<div><input type="text" name="jswname"></div>
+		<div><input type="text" value="${jswdata.jswname }" name="jswname"></div>
 		<div>암호</div><div><input type="password" name="jswpw"/></div>
-		<div>제목</div><div><input type="text" name="jswtitle"/></div>
-		<div>내용</div><div><textarea name="jswcontent" rows="5" cols="30"/></textarea></div>
+		<div>제목</div><div><input type="text" value="${jswdata.jswtitle }" name="jswtitle"/></div>
+		<div>내용</div><div><textarea name="jswcontent" rows="5" cols="30"/>${jswdata.jswcontent }</textarea></div>
 	</div>
 
  	<div>
- 		<input type="submit" value="등록하기"/>
+ 		<input type="submit" value="수정하기"/>
  		<input type="button" value="뒤로가기" onclick="location.href='list?page=${pDTO.page}'"/>
  	</div>
  </div>

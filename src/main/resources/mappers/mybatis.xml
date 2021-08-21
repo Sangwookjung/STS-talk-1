@@ -19,13 +19,19 @@ PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
 	</select>
 	
 	<insert id="jswInsert" parameterType="JswlistDTO">
-		insert into board (jswtitle, jswname, jswpw, jswcontent, jswcnt, jswdate ) 
+		insert into jswlist (jswtitle, jswname, jswpw, jswcontent, jswcnt, jswdate ) 
 		values (#{jswtitle}, #{jswname}, #{jswpw}, #{jswcontent}, 0, sysdate() )
 		
 		<selectKey keyProperty="jswno" order="AFTER" resultType="Integer">
-			select max(jswno) from board
+			select max(jswno) from jswlist
 		</selectKey>
 	</insert>
+	
+	<update id="jswUpdate" parameterType="JswlistDTO">
+		update jswlist set 
+		jswtitle = #{jswtitle} , jswname = #{jswname} , jswcontent = #{jswcontent}
+		where jswno = #{jswno} and jswpw = #{jswpw}
+	</update>
 	
 	<update id="viewCnt" parameterType="JswListDTO">
 		update jswlist set

@@ -21,4 +21,8 @@ public class HomeController {
 		
 		
 	}
+	@RequestMapping(value="/test")
+	public String test() throws Exception {
+		return "talk/jsw/insert";
+	}
 }

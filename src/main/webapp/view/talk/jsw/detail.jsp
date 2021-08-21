@@ -38,6 +38,23 @@
 	}
 </style>
 <body>
+<script>
+	//function mkfunc(mode) {
+		function mkfunc(mode) {
+		var form = document.frmSubmit;
+		
+		if(mode == '01') {
+			console.log('1')
+			form.method="post";
+			form.target="_self";
+			form.action="update";
+		}
+		console.log('2')
+		form.submit();
+		console.log('3ㅋㅋ 루 삥뽕 ㅋㅋ루삥뽕')
+	}
+</script>
+<form name="frmSubmit">
 <div class="wrapper">
 	<div class="first">
 		<div>번호</div>
@@ -58,9 +75,11 @@
   	</div>
  	<div>
  		<input type="button" value="삭제하기" />
- 		<input type="button" value="수정하기" />
+ 		<input type="button" value="수정하기" onclick="mkfunc('01')"/>
+		<%-- <input type="button" value="수정하기" onclick="location.href='update?page=${pDTO.page}&jswno=${jswdata.jswno }'"/> --%>
  		<input type="button" value="뒤로가기" onclick="location.href='list?page=${pDTO.page}'"/>
  	</div>
  </div>
+ </form>
 </body>
 </html>
