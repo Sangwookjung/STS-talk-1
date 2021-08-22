@@ -19,6 +19,12 @@ public interface RjsMapper {
 	
 	void rjsInsert(RjsListDTO rjsDTO); //글쓰기 정보 DB 저장
 
-	int rjsModify(RjsListDTO rjsDTO); // 수정하기 위해 값의 int 값을 가저옴
+	int rjsModify(RjsListDTO rjsDTO); // 수정하기 위해 값의 int 값을 가저옴 (update 를 하게되면 갯수를 가저옴)
+	
+	int rjsDelete(RjsListDTO rjsDTO); // 삭제하기 위해 값의 int 값을 가저옴
+	
+	//int AUTO_INCREMENT_clear(RjsListDTO rjsDTO); //  AUTO_INCREMENT 초기화 
+	
+	
 	
 }

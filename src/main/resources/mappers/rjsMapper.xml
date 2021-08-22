@@ -45,4 +45,10 @@
         where rjsnumber = #{rjsnumber} and rjspw = #{rjspw}
     </update>
 	 <!-- 게시물 수정 --> 
+	 
+	<delete id="rjsDelete" parameterType="RjsListDTO" >
+		delete from rjsboard where rjsnumber = #{rjsnumber} and rjspw = #{rjspw}
+	</delete>
+	 <!-- 게시물 삭제 -->
+	 
 </mapper>
